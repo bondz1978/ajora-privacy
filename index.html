@@ -136,6 +136,12 @@
       color: #888;
     }
 
+    .tp-info a {
+      font-size: 12px;
+      color: #1D9E75;
+      text-decoration: none;
+    }
+
     .permission-item {
       display: flex;
       align-items: flex-start;
@@ -180,6 +186,34 @@
       margin-top: 12px;
       font-size: 14px;
       color: #1D9E75;
+      font-weight: 600;
+    }
+
+    .warning-box {
+      background: #fff8e1;
+      border-left: 4px solid #FFA000;
+      border-radius: 0 12px 12px 0;
+      padding: 14px 16px;
+      margin-top: 12px;
+      font-size: 13px;
+      color: #7d5c00;
+      line-height: 1.6;
+    }
+
+    .admob-box {
+      background: #e8f0fe;
+      border-left: 4px solid #4285F4;
+      border-radius: 0 12px 12px 0;
+      padding: 14px 16px;
+      margin-top: 12px;
+      font-size: 13px;
+      color: #1a3a8f;
+      line-height: 1.7;
+    }
+
+    .admob-box a {
+      color: #4285F4;
+      text-decoration: none;
       font-weight: 600;
     }
 
@@ -233,37 +267,37 @@
   <img src="logo.png" alt="AJora Logo" />
   <h1>AJora</h1>
   <p>Privacy Policy</p>
-  <div class="badge">Last updated: May 2026</div>
+  <div class="badge">Last updated: June 2026</div>
 </header>
 
 <main>
 
-  <!-- Intro -->
+  <!-- Overview -->
   <div class="card">
     <h2><span class="icon">📋</span> Overview</h2>
     <p>
-      AJora ("we", "our", or "the app") is developed by <strong>AJ-Production</strong> 
-      and is available on the Google Play Store. This Privacy Policy explains how we handle 
-      your information when you use the AJora application.
+      AJora ("we", "our", or "the app") is developed by <strong>AJ-Production</strong>
+      and is available on the Google Play Store. This Privacy Policy explains how we collect,
+      use, and handle your information when you use the AJora application.
     </p>
     <div class="highlight-box">
-      🔒 Most data in AJora is stored locally on your device and is never sent to our servers.
+      🔒 Most data in AJora is stored locally on your device and is never transmitted to our servers.
     </div>
   </div>
 
   <!-- Al-Quran Digital -->
   <div class="card">
     <h2><span class="icon">📖</span> Al-Quran Digital Feature</h2>
-    <p>AJora includes a Digital Al-Quran feature. The following data related to this feature is stored <strong>locally on your device only</strong>:</p>
+    <p>AJora includes a Digital Al-Quran feature. The following data is stored <strong>locally on your device only</strong>:</p>
     <ul>
       <li>Last reading position (surah and ayah number)</li>
       <li>Bookmarked verses</li>
-      <li>Selected reciter (Qori) preference</li>
+      <li>Selected reciter (Qari) preference</li>
       <li>Language preference for translation (Indonesian / English)</li>
     </ul>
     <p style="margin-top: 12px;">
-      Quran text, translations, and audio recitation are fetched from <strong>Quran.com API (api.quran.com)</strong> 
-      and <strong>verses.quran.com</strong>. These requests are made over the internet and are subject to 
+      Quran text, translations, and audio recitation are fetched from <strong>Quran.com API (api.quran.com)</strong>
+      and <strong>verses.quran.com</strong>. These requests are made over the internet and are subject to
       Quran.com's own privacy policy. No personal user data is sent to Quran.com.
     </p>
     <div class="highlight-box">
@@ -271,12 +305,12 @@
     </div>
   </div>
 
-  <!-- Hadits Digital -->
+  <!-- Hadith Digital -->
   <div class="card">
-    <h2><span class="icon">📚</span> Hadits Digital Feature</h2>
+    <h2><span class="icon">📚</span> Hadith Digital Feature</h2>
     <p>AJora includes a Digital Hadith feature with 9 major hadith collections. The following data is stored <strong>locally on your device only</strong>:</p>
     <ul>
-      <li>Last reading position per kitab (book and hadith number)</li>
+      <li>Last reading position per book (kitab and hadith number)</li>
       <li>Bookmarked hadiths</li>
       <li>Language preference for translation (Indonesian / English)</li>
     </ul>
@@ -290,32 +324,80 @@
     </div>
   </div>
 
-  <!-- Data Collected -->
+  <!-- Daily Dua, Manasik & Tahlil -->
+  <div class="card">
+    <h2><span class="icon">🤲</span> Daily Dua, Manasik & Tahlil Features</h2>
+    <p>
+      AJora includes Islamic reference content such as <strong>Daily Prayers (Doa Harian)</strong>,
+      <strong>Hajj & Umrah Guidance (Manasik)</strong>, and <strong>Tahlil</strong> collections.
+      This content is fetched from our backend services hosted on <strong>Supabase</strong> and <strong>Vercel</strong>.
+    </p>
+    <ul style="margin-top: 12px;">
+      <li>Content is fetched over the internet from our Supabase database and Vercel API endpoints.</li>
+      <li>No personal user data is sent to Supabase or Vercel when fetching this content.</li>
+      <li>Reading progress and bookmarks for these features are stored <strong>locally on your device only</strong>.</li>
+    </ul>
+    <div class="warning-box">
+      ⚠️ Supabase and Vercel are third-party infrastructure providers. Data transmitted through these services
+      is subject to their respective privacy policies:
+      <br/>
+      · <strong>Supabase:</strong> <a href="https://supabase.com/privacy" style="color:#7d5c00;">supabase.com/privacy</a>
+      <br/>
+      · <strong>Vercel:</strong> <a href="https://vercel.com/legal/privacy-policy" style="color:#7d5c00;">vercel.com/legal/privacy-policy</a>
+    </div>
+  </div>
+
+  <!-- Data We Collect -->
   <div class="card">
     <h2><span class="icon">📦</span> Data We Collect</h2>
     <p>AJora collects and stores the following data <strong>locally on your device only</strong>:</p>
     <ul>
       <li>Display name and profile photo (optional, user-provided)</li>
-      <li>Date of birth (optional, for age-related features)</li>
       <li>Last Quran reading position, bookmarks, and selected reciter preference</li>
-      <li>Last Hadith reading position and bookmarks per kitab</li>
+      <li>Last Hadith reading position and bookmarks per book</li>
+      <li>Bookmarks and reading progress for Daily Dua, Manasik, and Tahlil</li>
       <li>App preferences (theme, language, selected reciter)</li>
     </ul>
     <p style="margin-top: 12px;">
-      We do <strong>not</strong> collect, transmit, or store any of this data on external servers.
+      We do <strong>not</strong> collect, transmit, or store any of the above data on our own servers.
     </p>
   </div>
 
-  <!-- Third Party Services -->
+  <!-- Advertising (AdMob) -->
+  <div class="card">
+    <h2><span class="icon">📢</span> Advertising — Google AdMob</h2>
+    <p>
+      AJora displays advertisements provided by <strong>Google AdMob</strong>, a third-party advertising service operated by Google LLC.
+      AdMob may collect and use certain data from your device in order to serve personalized or non-personalized ads.
+    </p>
+    <p style="margin-top: 10px;">This data may include, but is not limited to:</p>
+    <ul>
+      <li>Advertising ID (Google Advertising Identifier / GAID)</li>
+      <li>Device information (model, OS version, screen size)</li>
+      <li>IP address and approximate location</li>
+      <li>App usage and interaction data</li>
+      <li>Cookies and similar tracking technologies</li>
+    </ul>
+    <div class="admob-box">
+      📌 This data is collected and processed by Google, not by AJ-Production. We do not have access to this data.
+      <br/><br/>
+      To learn more or to opt out of personalized advertising, please visit:<br/>
+      · <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a><br/>
+      · <a href="https://support.google.com/ads/answer/2662922" target="_blank">Google Ads Settings</a><br/>
+      · You may also opt out via your device settings under <strong>Privacy → Ads → Delete Advertising ID</strong> (Android 12+).
+    </div>
+  </div>
+
+  <!-- Third-Party Services -->
   <div class="card">
     <h2><span class="icon">🔗</span> Third-Party Services</h2>
-    <p>AJora integrates with the following third-party services. Each has its own Privacy Policy:</p>
+    <p>AJora integrates with the following third-party services, each governed by its own privacy policy:</p>
 
     <div class="third-party-item">
       <div class="tp-icon">📖</div>
       <div class="tp-info">
         <strong>Quran.com API (api.quran.com)</strong>
-        <span>Quran text, translations, and audio recitation data</span>
+        <span>Provides Quran text, translations, and audio recitation data</span>
       </div>
     </div>
 
@@ -323,7 +405,25 @@
       <div class="tp-icon">🎙️</div>
       <div class="tp-info">
         <strong>verses.quran.com</strong>
-        <span>Murattal audio files for Quran recitation</span>
+        <span>Provides Murattal audio files for Quran recitation playback</span>
+      </div>
+    </div>
+
+    <div class="third-party-item">
+      <div class="tp-icon">🗄️</div>
+      <div class="tp-info">
+        <strong>Supabase</strong>
+        <span>Backend database used for Daily Dua, Manasik, and Tahlil content</span>
+        <br/><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a>
+      </div>
+    </div>
+
+    <div class="third-party-item">
+      <div class="tp-icon">▲</div>
+      <div class="tp-info">
+        <strong>Vercel</strong>
+        <span>API hosting used for Daily Dua, Manasik, and Tahlil endpoints</span>
+        <br/><a href="https://vercel.com/legal/privacy-policy" target="_blank">vercel.com/legal/privacy-policy</a>
       </div>
     </div>
 
@@ -339,7 +439,7 @@
       <div class="tp-icon">🤖</div>
       <div class="tp-info">
         <strong>Groq Cloud</strong>
-        <span>AI inference engine for chatbot and assistant features</span>
+        <span>AI inference engine powering the chatbot and assistant features</span>
       </div>
     </div>
 
@@ -347,7 +447,7 @@
       <div class="tp-icon">💱</div>
       <div class="tp-info">
         <strong>ExchangeRate API (open.er-api.com)</strong>
-        <span>Live currency exchange rates for currency conversion feature</span>
+        <span>Provides live currency exchange rates for the currency converter feature</span>
       </div>
     </div>
 
@@ -355,7 +455,7 @@
       <div class="tp-icon">📚</div>
       <div class="tp-info">
         <strong>api.hadith.gading.dev</strong>
-        <span>Hadith text and Indonesian translation data</span>
+        <span>Provides Hadith text and Indonesian translation data</span>
       </div>
     </div>
 
@@ -363,7 +463,7 @@
       <div class="tp-icon">📜</div>
       <div class="tp-info">
         <strong>hadithapi.com</strong>
-        <span>Hadith English translation data</span>
+        <span>Provides Hadith English translation data</span>
       </div>
     </div>
 
@@ -371,7 +471,7 @@
       <div class="tp-icon">🌐</div>
       <div class="tp-info">
         <strong>Wikipedia / Wikimedia</strong>
-        <span>Encyclopedia content under CC BY-SA 3.0 license</span>
+        <span>Encyclopedia content licensed under CC BY-SA 3.0</span>
       </div>
     </div>
 
@@ -379,7 +479,8 @@
       <div class="tp-icon">📢</div>
       <div class="tp-info">
         <strong>Google AdMob</strong>
-        <span>Advertising service by Google — may collect device identifiers for ad personalization</span>
+        <span>Advertising service by Google — may collect device identifiers and usage data for ad personalization</span>
+        <br/><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
       </div>
     </div>
   </div>
@@ -393,7 +494,7 @@
       <div class="perm-icon">📷</div>
       <div class="perm-info">
         <strong>Camera</strong>
-        <span>Used to take a profile photo. Not used for any other purpose.</span>
+        <span>Used solely to capture a profile photo. Not used for any other purpose.</span>
       </div>
     </div>
 
@@ -401,7 +502,7 @@
       <div class="perm-icon">🖼️</div>
       <div class="perm-info">
         <strong>Storage / Gallery</strong>
-        <span>Used to select a profile photo from your gallery.</span>
+        <span>Used to select a profile photo from your device gallery.</span>
       </div>
     </div>
 
@@ -409,7 +510,7 @@
       <div class="perm-icon">📍</div>
       <div class="perm-info">
         <strong>Location</strong>
-        <span>Used for map features and prayer time calculation based on your location.</span>
+        <span>Used for map features and accurate prayer time calculation based on your current location. Location data is not transmitted to any server.</span>
       </div>
     </div>
 
@@ -417,7 +518,7 @@
       <div class="perm-icon">🌐</div>
       <div class="perm-info">
         <strong>Internet</strong>
-        <span>Required to fetch Quran data, news feeds, AI responses, and display ads.</span>
+        <span>Required to fetch Quran data, Hadith content, Daily Dua, Manasik, Tahlil, AI responses, and to display advertisements.</span>
       </div>
     </div>
 
@@ -425,18 +526,34 @@
       <div class="perm-icon">🔔</div>
       <div class="perm-info">
         <strong>Notifications</strong>
-        <span>Used for prayer time reminders (if enabled by user).</span>
+        <span>Used to send prayer time reminders, only if enabled by the user.</span>
+      </div>
+    </div>
+
+    <div class="permission-item">
+      <div class="perm-icon">📅</div>
+      <div class="perm-info">
+        <strong>Calendar</strong>
+        <span>Used to integrate Islamic calendar events and prayer schedules into your device calendar, if the user chooses to do so.</span>
+      </div>
+    </div>
+
+    <div class="permission-item">
+      <div class="perm-icon">⏰</div>
+      <div class="perm-info">
+        <strong>Exact Alarm / Schedule Alarm</strong>
+        <span>Used to deliver precise prayer time notifications at the correct time.</span>
       </div>
     </div>
   </div>
 
-  <!-- Children -->
+  <!-- Children's Privacy -->
   <div class="card">
     <h2><span class="icon">👶</span> Children's Privacy</h2>
     <p>
-      AJora is not directed at children under the age of 13. We do not knowingly collect 
-      personal information from children. If you believe a child has provided personal 
-      information through the app, please contact us so we can remove it.
+      AJora is not directed at children under the age of 13. We do not knowingly collect
+      personal information from children. If you believe a child has provided personal
+      information through the app, please contact us immediately so we can take appropriate action.
     </p>
   </div>
 
@@ -444,10 +561,11 @@
   <div class="card">
     <h2><span class="icon">🛡️</span> Data Security</h2>
     <p>
-      All user preferences and personal data in AJora are stored locally on your device 
-      using Android's SharedPreferences. We do not operate any backend servers that store 
-      your personal data. Data transmitted to third-party services (e.g. Groq for AI) is 
-      subject to their respective privacy policies.
+      All user preferences and personal data in AJora are stored locally on your device
+      using Android's secure storage (SharedPreferences). We do not operate any backend servers
+      that store your personal data. Data transmitted to third-party services — such as Groq for AI,
+      Supabase and Vercel for Islamic content, and Google AdMob for advertising — is governed by
+      their respective privacy policies.
     </p>
   </div>
 
@@ -455,8 +573,9 @@
   <div class="card">
     <h2><span class="icon">🔄</span> Changes to This Policy</h2>
     <p>
-      We may update this Privacy Policy from time to time. Any changes will be reflected 
-      on this page with an updated date. We encourage you to review this policy periodically.
+      We may update this Privacy Policy from time to time to reflect changes in our app or
+      applicable regulations. Any updates will be posted on this page with a revised date at the top.
+      We encourage you to review this policy periodically.
     </p>
   </div>
 
