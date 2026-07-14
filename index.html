@@ -347,6 +347,29 @@
     </div>
   </div>
 
+  <!-- Voice Translator -->
+  <div class="card">
+    <h2><span class="icon">🎙️</span> Voice Translator Feature</h2>
+    <p>
+      AJora includes a Voice Translator feature that converts speech into text, translates it,
+      and reads the translation aloud.
+    </p>
+    <ul style="margin-top: 12px;">
+      <li>When you speak, your voice recording is sent to <strong>Groq Cloud</strong> for transcription.</li>
+      <li>The transcribed text is sent to <strong>Groq Cloud</strong> for translation.</li>
+      <li>The translated text is converted to speech using <strong>Groq Cloud</strong> and/or <strong>ElevenLabs</strong>, depending on the selected language.</li>
+      <li>Conversation history is stored <strong>locally on your device only</strong> and is not saved on our servers.</li>
+    </ul>
+    <div class="warning-box">
+      ⚠️ Voice recordings and text processed through this feature are subject to the privacy
+      policies of Groq and ElevenLabs:
+      <br/>
+      · <strong>Groq:</strong> <a href="https://groq.com/privacy-policy/" style="color:#7d5c00;">groq.com/privacy-policy</a>
+      <br/>
+      · <strong>ElevenLabs:</strong> <a href="https://elevenlabs.io/privacy" style="color:#7d5c00;">elevenlabs.io/privacy</a>
+    </div>
+  </div>
+
   <!-- Data We Collect -->
   <div class="card">
     <h2><span class="icon">📦</span> Data We Collect</h2>
@@ -382,8 +405,8 @@
       📌 This data is collected and processed by Google, not by AJ-Production. We do not have access to this data.
       <br/><br/>
       To learn more or to opt out of personalized advertising, please visit:<br/>
-      · <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a><br/>
-      · <a href="https://support.google.com/ads/answer/2662922" target="_blank">Google Ads Settings</a><br/>
+      · <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a><br/>
+      · <a href="https://support.google.com/ads/answer/2662922" target="_blank" rel="noopener">Google Ads Settings</a><br/>
       · You may also opt out via your device settings under <strong>Privacy → Ads → Delete Advertising ID</strong> (Android 12+).
     </div>
   </div>
@@ -439,7 +462,16 @@
       <div class="tp-icon">🤖</div>
       <div class="tp-info">
         <strong>Groq Cloud</strong>
-        <span>AI inference engine powering the chatbot and assistant features</span>
+        <span>AI inference engine powering the chatbot, assistant, and Voice Translator features (speech-to-text, translation, and text-to-speech)</span>
+      </div>
+    </div>
+
+    <div class="third-party-item">
+      <div class="tp-icon">🎙️</div>
+      <div class="tp-info">
+        <strong>ElevenLabs</strong>
+        <span>Text-to-speech provider used by the Voice Translator feature for select languages</span>
+        <br/><a href="https://elevenlabs.io/privacy" target="_blank">elevenlabs.io/privacy</a>
       </div>
     </div>
 
@@ -511,6 +543,14 @@
       <div class="perm-info">
         <strong>Location</strong>
         <span>Used for map features and accurate prayer time calculation based on your current location. Location data is not transmitted to any server.</span>
+      </div>
+    </div>
+
+    <div class="permission-item">
+      <div class="perm-icon">🎤</div>
+      <div class="perm-info">
+        <strong>Microphone</strong>
+        <span>Used for the Voice Translator feature to record your speech for transcription and translation.</span>
       </div>
     </div>
 
